@@ -1,0 +1,26 @@
+.nav {
+    background-color: orange; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+
+  .vl {
+    border-left: 6px solid #555;
+
+  }
+
+  a{
+      text-decoration: none;
+      color: #555;
+     
+  }

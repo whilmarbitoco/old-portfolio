@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lexend+Mega&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lexend+Mega&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  header {
+    background-image: url("../img/hire-header.jpg");
+    background-size: cover;
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Lexend Mega', sans-serif;
+    padding: 40px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+   
+  nav {
+    float: left;
+    width: 15%;
+    display: block;
+    height: 700px; 
+    background: #ccc;
+    padding: 0 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
+  
+ul a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+  
+  nav a.active {
+    background-color:  #101820FF;
+    color: white;
+  }
+
+ nav a:hover:not(.active) {
+    background-color: #F2AA4CFF;
+    color: white;
+  }
+  
+
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+  
+  
+  section a:visited {
+    color: #555;
+  }
+   
+   
+  section a:active {
+    color: blue;
+  } 
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 700px; 
+  }
+  
+.posted{
+  font-weight: 100;
+  letter-spacing: 2;
+  padding: 5px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-style: solid;
+  font-family: 'Hammersmith One', sans-serif;
+  font-family: 'Lexend Mega', sans-serif;
+  border-color: #00000018;
+  border-radius: 10px;
+}
+
+.popup{
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #f5f6fa;
+  color: #0d0d0d;
+  padding: 0 32px;
+  padding-bottom: 50px;
+  transition: 400ms;
+  box-shadow: 0 -2px 16px #2f3640;
+}
+
+.popup.active {
+  bottom: 0;
+}
+
+.msg-ctt{
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #f5f6fa;
+  color: #0d0d0d;
+  padding: 0 32px;
+  padding-bottom: 50px;
+  transition: 400ms;
+  box-shadow: 0 -2px 16px #2f3640;
+}
+
+.msg-ctt.active {
+  bottom: 0;
+}
+
+.popup-btn, .popup-lrm, .popup-btn2, .popup-ctt{
+  background-color: #101820FF;
+  border: 0;
+  color: #f5f6fa;
+  padding: 10px;
+  min-width: 10%;
+  min-height: 10%;
+  font-size: 18px;;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.popup-btn:hover, .popup-ctt:hover, .popup-lrm:hover{
+background-color: #F2AA4CFF;
+}
+
+
+.warning{
+
+text-decoration: underline orange;
+}
+
+.warning:hover{
+  text-decoration: underline red;
+}
+
+img{
+  max-width: 400px;
+  height: 500px;
+  position: static;
+}
+
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #101820FF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #F2AA4CFF;
+}
+
+ 
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+ 
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ 
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  img{
+    max-width: 325px;
+    height: 400px;
+    position: static;
+  }
+
+}
+
+ 
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  footer {
+    background-color: #00203FFF;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+
+   
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    nav {
+      width: 100%;
+      margin-top: 10px;
+      height: auto;
+      position: relative;
+    }
+    ul a {float: left;}
+    article {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    nav a {
+      text-align: center;
+      float: none;
+    }
+    img{
+      height: 250px;
+    }
+  }
+
+  .fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    color: #f1f1f1;
+    background: #000000;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  
